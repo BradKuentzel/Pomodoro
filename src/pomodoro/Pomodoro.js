@@ -42,6 +42,7 @@ function Pomodoro() {
     setIsTimerRunning(false)
     setClockStop(true)
     setDisableControls(false)
+    setStopDisable(true)
   }
 
   const playPause = () => {

@@ -6,11 +6,11 @@ export default function Timer({
   countdown,  
   focus, 
   breakTime, 
-  isTimerRunning,
-  clockStop
+  clockStop,
+  paused
 }) {
 
-const paused = isTimerRunning ? '' : 'PAUSED'
+
   
 const clock = status === "On Break" ? breakTime : focus; 
 const percentage =

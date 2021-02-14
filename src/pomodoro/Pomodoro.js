@@ -14,6 +14,7 @@ function Pomodoro() {
   const [clockStop, setClockStop] = useState(true)
   const [disableControls, setDisableControls] = useState(false)
   const [stopDisable, setStopDisable] = useState(true)
+  const [paused, setPaused] = useState("PAUSED")
   const myAudio = useRef();
   const alarm = new Audio(soundfile);
   
@@ -43,9 +44,11 @@ function Pomodoro() {
     setClockStop(true)
     setDisableControls(false)
     setStopDisable(true)
+    setPaused("")
   }
 
   const playPause = () => {
+    setPaused((prevState)=> !prevState);
     setIsTimerRunning((prevState) => !prevState);
     setClockStop(false)
     setDisableControls(true)
@@ -74,7 +77,7 @@ function Pomodoro() {
     setCountdown={setCountdown} 
     focus={focus} 
     breakTime={breakTime} 
-    isTimerRunning={isTimerRunning}
+    paused={paused}
     clockStop={clockStop} 
       />
       <audio id='alarm' ref={myAudio} src={alarm} type='audio/mp3'></audio> 

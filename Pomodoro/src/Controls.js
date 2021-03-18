@@ -1,5 +1,5 @@
 import React from "react"
-import {minutesToDuration} from "./utils/duration"
+import {minutesToDuration} from "../../Pomodoro/utils/duration"
 
 export default function Controls({focus, breakTime, setFocus, setBreak, setCountdown, disableControls}) {
 

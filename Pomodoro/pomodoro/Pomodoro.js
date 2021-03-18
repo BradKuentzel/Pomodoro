@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import useInterval from "../utils/useInterval";
-import Controls from "../Controls";
-import Play from "../Play";
-import Timer from "../Timer";
+import Controls from "../src/Controls";
+import Play from "../src/Play";
+import Timer from "../src/Timer";
 import soundfile from "../old_telephone.mp3"
 
 function Pomodoro() {

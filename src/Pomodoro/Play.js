@@ -1,5 +1,5 @@
 import React from "react";
-import classNames from "../../Pomodoro/utils/class-names"
+import classNames from "../utils/class-names"
 
 export default function Play({isTimerRunning, handleReset, playPause, stopDisable}) {
   

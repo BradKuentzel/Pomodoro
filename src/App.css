@@ -1,0 +1,13 @@
+#root {
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  position: relative;
+  top: 35%;
+}
+
+body {
+  background: lightskyblue;
+}
